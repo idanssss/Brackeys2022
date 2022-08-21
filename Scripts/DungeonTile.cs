@@ -4,12 +4,14 @@ using UnityEngine;
 
 public enum TileType
 {
-    summoner, PlayerSpawner, spike, chest, wall, floor, abyss
+    Summoner, PlayerSpawner, Spike, Chest, Wall, Floor, Abyss
 }
 
 
 public class DungeonTile : MonoBehaviour
 {
-    public TileType type;
-    void Awake() => TileManager.tiles.Add(this);
+    [SerializeField]
+    private TileType type;
+
+    private void Awake() => TileManager.AddTile(this);
 }
