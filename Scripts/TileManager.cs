@@ -7,7 +7,9 @@ public class TileManager : MonoBehaviour
     public int RoomAmount;
     public Vector2 StandardRoomSize;
 
-    public static List<DungeonTile> tiles = new List<DungeonTile>();
+    private static List<DungeonTile> tiles = new List<DungeonTile>();
+    public static void AddTile(DungeonTile tile) => tiles.Add(tile);
+    // TODO: ClearTiles()s
     
     void Start()
     {
