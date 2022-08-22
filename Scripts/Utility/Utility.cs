@@ -1,30 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System.Linq;
 
 public class Utility : MonoBehaviour
 {
-	#region DestroyAll
-	public static void DestroyAll(List<MonoBehaviour> list) 
+	public static void DestroyAll<T>(IEnumerable<T> list) where T : MonoBehaviour
 	{
-		for(int i = 0; i < list.Count; i++)
-		{
-			Destroy(list[i].gameObject);
-		}
+		foreach (var item in list)
+			Destroy(item.gameObject);
 	}
-	public static void DestroyAll<T>(List<T> list) where T : MonoBehaviour
-	{
-		for(int i = 0; i < list.Count; i++)
-		{
-			Destroy(list[i].gameObject);
-		}
-	}
-	public static void DestroyAll(Object[] list)
-	{
-		for(int i = 0; i < list.Length; i++)
-		{
-			Destroy(((Transform)list[i]).gameObject);
-		}
-	}
-	#endregion
 }
