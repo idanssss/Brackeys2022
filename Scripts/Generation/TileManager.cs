@@ -11,7 +11,8 @@ public class TileManager : MonoBehaviour
     public static void AddTile(DungeonTile tile) => tiles.Add(tile);
     public static void ClearTiles()
     {
-        
+        Utility.DestroyAll(tiles);
+        tiles.Clear();
     }
 
     // TODO: ClearTiles()
