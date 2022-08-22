@@ -15,9 +15,6 @@ public class TileManager : MonoBehaviour
         tiles.Clear();
     }
 
-    // TODO: ClearTiles()
-
-
     void Start()
     {
         for(int i = 0; i < RoomAmount; i++)
