@@ -9,8 +9,14 @@ public class TileManager : MonoBehaviour
 
     private static List<DungeonTile> tiles = new List<DungeonTile>();
     public static void AddTile(DungeonTile tile) => tiles.Add(tile);
-    // TODO: ClearTiles()s
-    
+    public static void ClearTiles()
+    {
+        
+    }
+
+    // TODO: ClearTiles()
+
+
     void Start()
     {
         for(int i = 0; i < RoomAmount; i++)
