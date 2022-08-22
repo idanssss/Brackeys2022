@@ -8,5 +8,10 @@ public class ConstantReferences : MonoBehaviour
     public List<MonoBehaviour> scripts = new List<MonoBehaviour>();
     public List<Texture2D> Textures = new List<Texture2D>();
 
-    public static ConstantReferences instantce = this; 
+    public static ConstantReferences instantce;
+    
+    private void Awake()
+    {
+        instantce = this;
+    }
 }

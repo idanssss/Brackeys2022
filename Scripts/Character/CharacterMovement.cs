@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Brackeys2022.Scripts.Player
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class CharacterMovement : MonoBehaviour
     {
         [SerializeField]
