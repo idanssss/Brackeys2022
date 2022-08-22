@@ -12,7 +12,7 @@ public class Utility : MonoBehaviour
 			Destroy(list[i].gameObject);
 		}
 	}
-	public static void DestroyAll(List<GameObject> list)
+	public static void DestroyAll<T>(List<T> list) where T : MonoBehaviour
 	{
 		for(int i = 0; i < list.Count; i++)
 		{
