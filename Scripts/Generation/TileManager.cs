@@ -19,7 +19,7 @@ public class TileManager : MonoBehaviour
     {
         for(int i = 0; i < RoomAmount; i++)
         {
-            RoomManager.GenerateRoom(new Vector2(10, 10), StandardRoomSize);
+            RoomManager.GenerateRoom(new Vector2(Random.Range(0, 10000), Random.Range(0, 100)), StandardRoomSize);
             //RoomManager.GenerateRoom(pos, Size);
         }    
     }
