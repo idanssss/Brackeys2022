@@ -7,6 +7,7 @@ public class RoomManager : MonoBehaviour
     public static void GenerateRoom(Vector2 pos, Vector2 size)
     {
         GameObject parent = Instantiate(new GameObject(), pos, Quaternion.identity);
+        parent.transform.name = "Parent";
         for(int x = 0; x < size.x; x++)
         {
             for(int y = 0; y < size.y; y++)
