@@ -19,11 +19,11 @@ public class Utility : MonoBehaviour
 			Destroy(list[i].gameObject);
 		}
 	}
-	public static void DestroyAll(Array list)
+	public static void DestroyAll(Object[] list)
 	{
 		for(int i = 0; i < list.Length; i++)
 		{
-			Destroy(((Object)list[i]).gameObject);
+			Destroy(((Transform)list[i]).gameObject);
 		}
 	}
 	#endregion
