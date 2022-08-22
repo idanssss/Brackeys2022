@@ -13,5 +13,6 @@ public class DungeonTile : MonoBehaviour
     [SerializeField]
     private TileType type;
 
-    private void Awake() => TileManager.AddTile(this);
+    private void Awake() =>
+     TileManager.AddTile(this);
 }

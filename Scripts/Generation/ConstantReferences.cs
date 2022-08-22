@@ -10,8 +10,6 @@ public class ConstantReferences : MonoBehaviour
 
     public static ConstantReferences instantce;
     
-    private void Awake()
-    {
+    private void Awake() =>
         instantce = this;
-    }
 }
